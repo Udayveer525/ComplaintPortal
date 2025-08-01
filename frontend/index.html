@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Complaint Portal</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, select, textarea, button { display: block; margin: 10px 0; padding: 8px; width: 300px; }
+    .complaint { border: 1px solid #aaa; padding: 10px; margin: 10px 0; }
+    .resolved { background: #d4edda; }
+    .pending { background: #fff3cd; }
+  </style>
+</head>
+<body>
+  <h1>Submit a Complaint</h1>
+  <form id="complaintForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="room" placeholder="Room No." required>
+    <input type="text" id="issue_type" placeholder="Issue Type" required>
+    <textarea id="description" placeholder="Describe the issue..."></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+  <h2>All Complaints</h2>
+  <div id="complaints"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
